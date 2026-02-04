@@ -22,11 +22,11 @@ public struct Calculator {
         return a - b
     }
     
-    public func multiply(_ a: Double, _ b: Double) -> Double {
+    public func multiply(_ a: Double, by b: Double) -> Double {
         return a * b
     }
     
-    public func divide(_ a: Double, _ b: Double) throws -> Double {
+    public func divide(_ a: Double, by b: Double) throws -> Double {
         guard b != 0 else {
             throw CalculatorError.divisionByZero
         }
